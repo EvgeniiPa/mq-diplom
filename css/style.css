@@ -503,6 +503,11 @@
   height: 48px;
   background-color: #b59f5b;
 }
+/* Стиль ховер добавил от себя для наглядности */
+.search-image-box:hover {
+  border: 2px solid #b59f5b;
+  background-color: #827810;
+}
 
 .search-image-glass {
   width: 18px;
@@ -551,6 +556,10 @@
   background-color: #f4f7f6;
 }
 
+.subscribe-input-email:focus {
+  border: 1px solid #b59f5b;
+}
+
 .subscribe-button {
   display: flex;
   justify-content: center;
@@ -560,6 +569,11 @@
   background-color: #b59f5b;
   outline: none;
   border: none;
+}
+/* Стиль ховер добавел от себя для наглядности  */
+.subscribe-button:hover {
+  border: 2px solid #b59f5b;
+  background-color: #827810;
 }
 
 .subscribe-button-text {
@@ -810,6 +824,11 @@
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.shop-content-button:hover {
+  border: 2px solid #b59f5b;
+  background-color: #827810;
 }
 
 .second-shop-content-text-link {
