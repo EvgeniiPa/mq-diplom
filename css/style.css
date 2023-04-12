@@ -13,7 +13,7 @@
 } */
 
 @font-face {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   src: url("../fonts/OpenSans-Bold.ttf");
   src: url(../fonts/OpenSans-Bold.woff);
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
   src: url(../fonts/OpenSans-Regular.ttf);
   src: url(../fonts/OpenSans-Regular.woff);
@@ -43,7 +43,7 @@
 .header {
   position: relative;
   min-width: 360px;
-  min-height: 640px;
+  height: 640px;
   padding: 30px 16px 0 16px;
   margin: 0 auto;
   background-image: url("../images/banner-mobile.jpg");
@@ -80,6 +80,10 @@
   list-style-type: none; */
 }
 
+.menu-link:hover {
+  text-decoration: underline;
+}
+
 .menu-burger-conteaner {
   display: flex;
   justify-content: flex-end;
@@ -88,17 +92,14 @@
 }
 
 .button-burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   height: 19px;
+  background-color: #666660;
+  border: none;
+  outline: none;
 }
 
 .burger-item {
-  width: 23px;
-  height: 3px;
-  background-color: #c90505;
+  fill: #ffffff;
 }
 
 .menu-logo {
@@ -117,20 +118,21 @@
 
 .menu-contant {
   padding: 0px 24px 0px 30px;
-  height: 94px;
+  min-height: 94px;
 
   margin-bottom: 217px;
 }
 
 .menu-contant-text {
   color: #ffffff;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: calc(3.5vw + 13px);
   text-transform: uppercase;
   line-height: 36px;
-
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   text-align: center;
+  line-height: calc(3.8vw + 22.3px);
 }
 
 /* ======TRANDS===== */
@@ -147,9 +149,10 @@
 }
 
 .trends-title {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: calc(0.49vw + 14.2px);
   text-transform: uppercase;
   color: #0f0d0e;
   text-align: center;
@@ -206,7 +209,7 @@
 }
 
 .trands-links {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -221,7 +224,7 @@
 }
 
 .trands-items-title {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 17px;
   text-transform: uppercase;
@@ -345,7 +348,7 @@
 }
 
 .link {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -360,7 +363,7 @@
 }
 
 .box-title-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
@@ -379,7 +382,7 @@
 }
 
 .box-data-number {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #989898;
@@ -387,7 +390,7 @@
 }
 
 .box-data-author {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 12px;
   color: #000000;
@@ -395,7 +398,7 @@
 }
 
 .box-text-contant {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #0f0d0e;
@@ -409,14 +412,11 @@
   margin-top: 44px;
 }
 
-.latest-posts {
-  text-align: center;
-}
-
 .latest-posts-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: calc(0.49vw + 14.2px);
   color: #0f0d0e;
 
   text-decoration: none;
@@ -459,14 +459,14 @@
 }
 
 .latest-posts-data {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #7e7e7e;
 }
 
 .latest-posts-link {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #000000;
@@ -505,7 +505,6 @@
 }
 /* Стиль ховер добавил от себя для наглядности */
 .search-image-box:hover {
-  border: 2px solid #b59f5b;
   background-color: #827810;
 }
 
@@ -535,9 +534,9 @@
 }
 
 .subscribe-title-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: calc(0.49vw + 14.2px);
   color: #0f0d0e;
   text-transform: uppercase;
 }
@@ -572,12 +571,11 @@
 }
 /* Стиль ховер добавел от себя для наглядности  */
 .subscribe-button:hover {
-  border: 2px solid #b59f5b;
   background-color: #827810;
 }
 
 .subscribe-button-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -605,9 +603,9 @@
 }
 
 .tags-title-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: calc(0.49vw + 14.2px);
   color: #0f0d0e;
   text-transform: uppercase;
 }
@@ -633,7 +631,7 @@
 }
 
 .tags-contant-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 12px;
   color: #0f0d0e;
@@ -660,9 +658,9 @@
 }
 
 .categories-title-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: calc(0.49vw + 14.2px);
   color: #0f0d0e;
   text-transform: uppercase;
 }
@@ -688,7 +686,7 @@
 }
 
 .categories-link-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #000000;
@@ -696,7 +694,7 @@
 }
 
 .categories-link-number {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 12px;
   color: #b59f5b;
@@ -725,7 +723,7 @@
 }
 
 .shop-title-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: #0f0d0e;
@@ -762,7 +760,7 @@
 }
 
 .shop-content-title-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 17px;
   color: #0f0d0e;
@@ -770,7 +768,7 @@
 }
 
 .shop-content-text-main {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #0f0d0e;
@@ -796,7 +794,7 @@
 }
 
 .first-price {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #0f0d0e;
@@ -804,7 +802,7 @@
 }
 
 .second-price {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #0f0d0e;
@@ -819,7 +817,7 @@
 }
 
 .shop-button-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
@@ -879,20 +877,54 @@
 }
 
 .copyrights-text {
-  font-family: OpenSans sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 13px;
   color: #a7a7a7;
   text-decoration: none;
 }
 
-/* =====MEDIA===== */
+/* ========================TABLET======================== */
 
 @media (min-width: 768px) {
   /*===== HRADER===== */
+  .header {
+    padding: 43px 35px 0 35px;
+    max-height: 392px;
+    background-image: url(../images/banner-bg-tablet.jpg);
+  }
+
+  .menu-container-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 36px;
+    margin-bottom: 103px;
+  }
+
+  .menu-burger-conteaner {
+    order: 1;
+    margin: 0;
+    background-color: #41504d;
+  }
+
+  .menu-logo {
+    width: 158px;
+    order: -1;
+    margin: 0px;
+  }
+
+  .menu-contant {
+    margin: 0px;
+  }
+
+  .menu-contant-text {
+    font-size: 40px;
+    line-height: 55px;
+  }
 
   /* =====TRENDS===== */
-  /* .trends-box {
+  .trends-box {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -900,5 +932,196 @@
   .trends-items {
     width: calc(50% - 2px);
     margin-right: 2px;
-  } */
+  }
+
+  .trends-items-title {
+    font-size: calc(0.69 + 12px);
+  }
+
+  /* =====MAIN====== */
+  .main {
+    display: flex;
+    padding: 50px 35px 0 35px;
+  }
+
+  .main-article {
+    margin-right: 35px;
+  }
+
+  .main-article-box {
+    margin-bottom: 41px;
+  }
+
+  /* ====ASIDE===== */
+
+  .main-aside {
+    margin: 0px;
+    min-width: 271px;
+  }
+
+  .latest-posts-text {
+    font-size: 14px;
+  }
+
+  .subscribe-title-text {
+    font-size: 14px;
+  }
+
+  .tags-title-text {
+    font-size: 14px;
+  }
+
+  .categories-title-text {
+    font-size: 14px;
+  }
+
+  /* =====SHOP==== */
+
+  .shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .shop-box {
+    width: 48.5%;
+  }
+
+  .shop-content-box {
+    flex-grow: 1;
+  }
+
+  .shop {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .footer {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+/* ========================DDESCTOP======================== */
+
+@media (min-width: 1200px) {
+  .header {
+    height: 449px;
+    background-position: top;
+    background-image: url(../images/banner-bg.jpg);
+  }
+
+  .menu-container {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  .menu-contant {
+    padding: 0px;
+    margin: 0px 244px;
+  }
+
+  .menu-list-items {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .menu-link {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 35px;
+  }
+
+  .menu-burger-conteaner {
+    display: none;
+  }
+
+  .menu-contant-text {
+    line-height: 75px;
+  }
+
+  /* ====TRENDS===== */
+
+  .trends-box {
+    flex-wrap: nowrap;
+  }
+
+  .trends-items {
+    width: calc(25% - 4px);
+    margin-right: 4px;
+    min-height: 320px;
+  }
+
+  .trands-items-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* ====MAIN===== */
+
+  .main {
+    margin: 0px auto;
+    max-width: 1200px;
+  }
+
+  .main-article {
+    margin-right: 125px;
+  }
+
+  .main-article-box {
+    display: flex;
+  }
+
+  .article-box-image {
+    max-width: 382px;
+    margin-right: 27px;
+  }
+
+  .article-box-nav {
+    margin-top: 0px;
+  }
+
+  .article-box-data {
+    margin-bottom: 52px;
+  }
+
+  .shop-title-text {
+    font-size: 20px;
+  }
+
+  /* ======SHOP====== */
+  .shop {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  .shop-container {
+    flex-wrap: nowrap;
+  }
+
+  .shop-box {
+    width: calc(33% - 66px);
+  }
+
+  .shop-box:nth-child(1),
+  .shop-box:nth-child(2),
+  .shop-box:nth-child(3) {
+    margin-bottom: 64px;
+  }
+
+  .shop-content-title-text {
+    font-size: 20px;
+  }
+
+  /* ========FOOTER=========== */
+
+  .footer {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
 }
