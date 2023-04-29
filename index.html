@@ -9,6 +9,48 @@
   </head>
   <body>
     <header class="header">
+      <!-- =============POPUP-START================= -->
+      <div class="popup-container hidden">
+        <div class="popup"> 
+          <svg class="popup-btn-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441"><path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/></svg>
+            <div class="popup-title">
+              <h3 class="popup-title-text">ваш фидбек</h3>
+            </div>
+            <div class="popup-list">
+              <p class="popup-list-title">Как часто вы заходите на сатй?</p>
+              <div class="popup-select-box">
+                <svg class="popup-arrows" viewBox="0 0 174 296" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z" fill="#B59F5B"/></svg>
+                <select class="popup-select" id="">
+                  <option  class="select-item">Почти каждый день</option>
+                  <option  class="select-item">Раз в несколько дней</option>
+                  <option  class="select-item">Раз в несколько недель</option>
+                  <option  class="select-item">Несколько раз в год</option> 
+                </select>
+              </div>
+            </div>
+            <div class="popup-subscription">
+              <p class="popup-subscription-text">Вы подписаны на e-mail рассылку?</p>
+              <div class="popup-radio-box">
+                <div class="popup-radio-selected">
+                  <svg class="popup-radio-circle"  viewBox="0 0 313 313" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M156.5 313c86.433 0 156.5-70.067 156.5-156.5S242.933 0 156.5 0 0 70.067 0 156.5 70.067 313 156.5 313zm0-17.389c76.829 0 139.111-62.282 139.111-139.111S233.329 17.389 156.5 17.389 17.389 79.67 17.389 156.5 79.67 295.611 156.5 295.611z" fill="#B59F5B"/><circle cx="156.5" cy="156.5" r="104.333" fill="#B59F5B"/></svg>
+                  <p class="popup-radio-selected-text">Да</p>
+                </div>
+                <div class="popup-radio-selected">
+                  <svg class="popup-radio-circle"  viewBox="0 0 313 313" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M156.5 313c86.433 0 156.5-70.067 156.5-156.5S242.933 0 156.5 0 0 70.067 0 156.5 70.067 313 156.5 313zm0-17.389c76.829 0 139.111-62.282 139.111-139.111S233.329 17.389 156.5 17.389 17.389 79.67 17.389 156.5 79.67 295.611 156.5 295.611z" fill="#B59F5B"/></svg>
+                  <p class="popup-radio-selected-text">Нет</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup-about-content">
+              <p class="popup-about-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+              <textarea name="" class="popup-about-textarea">Может, больше рецептов?</textarea>
+            </div>
+            <button class="button">
+              <p class="button-text">отправить</p>
+            </button>
+          </div>
+      </div>
+      <!-- =============POPUP-END================ -->
       <div class="menu-container">
         <div class="menu-container-row">
           <div class="menu-list">
@@ -18,7 +60,7 @@
               <li class="menu-link">Статьи</li>
               <li class="menu-link">Теги</li>
               <li class="menu-link">Темы</li>
-              <li class="menu-link">Контакты</li>
+              <li class="menu-link menu-link-last-item">Контакты</li>
             </ul>
           </div>
           <div class="menu-burger-conteaner">
@@ -649,6 +691,8 @@
     </footer>
   </body>
 </html>
+
+
 
 
 
