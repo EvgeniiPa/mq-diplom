@@ -51,6 +51,7 @@
   top: 0;
   left: 0;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .popup {
@@ -1315,9 +1316,9 @@
 }
 
 /* ===================Mobile-landscape==================== */
-/* @media (orientation: portrait) and (min-width: 641px) and (max-width: 1199px) {
+ @media (orientation: portrait) and (min-width: 641px) and (max-width: 1199px) {
   /* =====TRENDS===== */
-/* .trends-box {
+   .trends-box {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -1353,4 +1354,4 @@
   .trends-items-title {
     font-size: calc(0.69 + 12px);
   }
- } */
+ } 
