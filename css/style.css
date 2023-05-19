@@ -63,6 +63,10 @@
   border: 1px solid green;
 }
 
+.popup-text-hidden {
+  display: none;
+}
+
 .popup-title {
   display: flex;
   flex-direction: column;
@@ -124,7 +128,7 @@
   position: absolute;
   right: 4px;
   top: 15px;
-  width: 10px;
+  width: 20px;
   height: 16px;
   background-color: #f4f7f6;
 }
@@ -174,8 +178,11 @@
 }
 
 .popup-about-textarea {
-  width: 100%;
-  min-height: 130px;
+  min-width: 275px;
+  max-width: 275px;
+  min-height: 70px;
+  height: 130px;
+  max-height: 130px;
   padding: 21px;
   border: none;
   outline: none;
@@ -198,6 +205,10 @@
   background-color: #b59f5b;
 }
 
+.button:hover {
+  background-color: #323232;
+}
+
 .button-text {
   font-family: "OpenSans", sans-serif;
   font-weight: bold;
@@ -207,10 +218,23 @@
 }
 
 .popup-btn-close {
+  width: 17px;
+}
+
+.popup-btn {
   position: absolute;
-  width: 26px;
   right: 0;
   top: -26px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.circle {
+  fill: #ffffff;
+}
+
+.circle:hover {
+  fill: #b59f5b;
 }
 
 /* .hidden {
@@ -319,6 +343,8 @@
 .trends {
   min-width: 360px;
   display: block;
+  position: relative;
+  z-index: -1;
 }
 
 .now-trends {
