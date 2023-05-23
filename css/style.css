@@ -38,6 +38,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*=====Mobile first=====*/
 
 /* =======POPUP======= */
@@ -52,6 +53,8 @@
   left: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.6);
+
+  /* display: none; */
 }
 
 .popup {
@@ -59,8 +62,6 @@
   width: 331px;
   padding: 30px 25px;
   background-color: #ffffff;
-
-  border: 1px solid green;
 }
 
 .popup-text-hidden {
@@ -140,32 +141,6 @@
   margin-bottom: 10px;
 }
 
-.popup-radio-box {
-  display: flex;
-  margin-bottom: 33px;
-}
-
-.popup-radio-selected-text {
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.popup-radio-selected {
-  display: flex;
-  align-items: center;
-  margin-right: 35px;
-}
-
-.popup-radio-circle {
-  width: 25px;
-  margin-right: 6px;
-}
-
-.popup-radio-circle {
-  width: 25px;
-}
-
 .popup-about-content {
   margin-bottom: 27px;
 }
@@ -229,17 +204,69 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.circle {
-  fill: #ffffff;
+/* ===========POPUP-INPUT-RADIO======== */
+
+.radio-container {
+  display: flex;
+  margin-bottom: 32px;
 }
 
-.circle:hover {
-  fill: #b59f5b;
+.radio-box {
+  position: relative;
 }
 
-/* .hidden {
-  display: none;
-} */
+.radio-box-second {
+  margin-left: 10px;
+}
+
+.radio-input {
+  appearance: none;
+  position: absolute;
+}
+
+.radio-text {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+
+  margin-left: 21px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.radio-text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #b59f5b;
+  border-radius: 50%;
+
+  z-index: 1;
+}
+
+.radio-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 3.5px;
+  left: 3.5px;
+  background-color: #b59f5b;
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.radio-input:checked + .radio-text:before {
+  background-color: #ffffff;
+}
+
+.radio-input:checked + .radio-text:after {
+  opacity: 1;
+}
 
 /* ===============HEADER=========== */
 

@@ -33,14 +33,16 @@
             </div>
             <div class="popup-subscription">
               <p class="popup-subscription-text">Вы подписаны на e-mail рассылку?</p>
-              <div class="popup-radio-box">
-                <div class="popup-radio-selected">
-                  <svg class="popup-radio-circle"  viewBox="0 0 313 313" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M156.5 313c86.433 0 156.5-70.067 156.5-156.5S242.933 0 156.5 0 0 70.067 0 156.5 70.067 313 156.5 313zm0-17.389c76.829 0 139.111-62.282 139.111-139.111S233.329 17.389 156.5 17.389 17.389 79.67 17.389 156.5 79.67 295.611 156.5 295.611z" fill="#B59F5B"/><circle class="circle" cx="156.5" cy="156.5" r="104.333" fill="#B59F5B"/></svg>
-                  <p class="popup-radio-selected-text">Да</p>
+              <div class="radio-container">
+                <div class="radio-box">
+                  <span class="visually-hidden">Ответ Да</span>
+                  <input id="radio-yes" name="checked" type="radio" class="radio-input">
+                  <label class="radio-text yes" for="radio-yes">Да</label>
                 </div>
-                <div class="popup-radio-selected">
-                  <svg class="popup-radio-circle"  viewBox="0 0 313 313" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M156.5 313c86.433 0 156.5-70.067 156.5-156.5S242.933 0 156.5 0 0 70.067 0 156.5 70.067 313 156.5 313zm0-17.389c76.829 0 139.111-62.282 139.111-139.111S233.329 17.389 156.5 17.389 17.389 79.67 17.389 156.5 79.67 295.611 156.5 295.611z" fill="#B59F5B"/><circle class="circle" cx="156.5" cy="156.5" r="104.333" fill="#B59F5B"/></svg>
-                  <p class="popup-radio-selected-text">Нет</p>
+                <div class="radio-box radio-box-second">
+                  <span class="visually-hidden">Ответ Нет</span>
+                  <input id="radio-no" name="checked" type="radio" class="radio-input">
+                  <label class="radio-text no" for="radio-no">Нет</label>
                 </div>
               </div>
             </div>
@@ -694,6 +696,9 @@
     </footer>
   </body>
 </html>
+
+
+
 
 
 
